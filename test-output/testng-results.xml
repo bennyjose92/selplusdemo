@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18991" started-at="2020-02-13T11:22:49Z" finished-at="2020-02-13T11:23:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18991" started-at="2020-02-13T11:22:49Z" finished-at="2020-02-13T11:23:08Z">
+      <class name="tests.reportGenerator">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.reportGenerator@91161c7]" name="beforeTest" is-config="true" duration-ms="3714" started-at="2020-02-13T16:52:49Z" finished-at="2020-02-13T16:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="logintest()[pri:0, instance:tests.reportGenerator@91161c7]" name="logintest" duration-ms="11405" started-at="2020-02-13T16:52:53Z" finished-at="2020-02-13T16:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="getstatus(org.testng.ITestResult)[pri:0, instance:tests.reportGenerator@91161c7]" name="getstatus" is-config="true" duration-ms="20" started-at="2020-02-13T16:53:04Z" finished-at="2020-02-13T16:53:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logintest status=SUCCESS method=reportGenerator.logintest()[pri:0, instance:tests.reportGenerator@91161c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getstatus -->
+        <test-method status="FAIL" signature="registertest()[pri:0, instance:tests.reportGenerator@91161c7]" name="registertest" duration-ms="4" started-at="2020-02-13T16:53:04Z" finished-at="2020-02-13T16:53:04Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertTrue(Assert.java:44)at org.testng.Assert.assertTrue(Assert.java:54)at tests.reportGenerator.registertest(reportGenerator.java:48)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registertest -->
+        <test-method status="PASS" signature="getstatus(org.testng.ITestResult)[pri:0, instance:tests.reportGenerator@91161c7]" name="getstatus" is-config="true" duration-ms="4" started-at="2020-02-13T16:53:04Z" finished-at="2020-02-13T16:53:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=registertest status=FAILURE method=reportGenerator.registertest()[pri:0, instance:tests.reportGenerator@91161c7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getstatus -->
+        <test-method status="PASS" signature="flushh()[pri:0, instance:tests.reportGenerator@91161c7]" name="flushh" is-config="true" duration-ms="3792" started-at="2020-02-13T16:53:04Z" finished-at="2020-02-13T16:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushh -->
+      </class> <!-- tests.reportGenerator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
